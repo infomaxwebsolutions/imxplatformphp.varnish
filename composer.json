@@ -1,0 +1,37 @@
+{
+  "name": "infomax/imxplatformphp.varnish",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Bastian Schwarz",
+      "email": "schwarz@infomax-it.de"
+    }
+  ],
+  "require": {
+    "php": "^5.6 || ^7.0",
+    "infomax/imxplatformphp.core": "*",
+    "codenamephp/platform.di": "^2"
+  },
+  "require-dev": {
+    "codenamephp/platform.test": "^1",
+    "pdepend/pdepend": "^2",
+    "squizlabs/php_codesniffer": "^2",
+    "phploc/phploc": "^3",
+    "phpmd/phpmd": "^2",
+    "sebastian/phpcpd": "^2",
+    "theseer/phpdox": "^0.8"
+  },
+  "autoload": {
+    "classmap": ["src/main/php"]
+  },
+  "autoload-dev": {
+    "psr-0": {
+      "de\\imxnet\\": ["src/main/php", "src/test/php"],
+      "": "vendor/pdepend/pdepend/src/main/php"
+    }
+  },
+  "archive": {
+    "exclude": ["/src/test"]
+  }
+}
