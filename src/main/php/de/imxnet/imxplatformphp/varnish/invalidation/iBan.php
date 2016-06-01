@@ -22,7 +22,7 @@ namespace de\imxnet\imxplatformphp\varnish\invalidation;
 
 /**
  * Interface for banning entries from varnish. This interface mainly exist so we are not directly bound to the 3rd party interface.
- *
+ * 
  * @author Bastian Schwarz <bastian@codename-php.de>
  */
 interface iBan extends \FOS\HttpCache\ProxyClient\Invalidation\BanInterface {
